@@ -1,10 +1,8 @@
-\frametitle{Typography}
-      \begin{minted}[fontsize=\small]{latex}
-The theme provides sensible defaults to \emph{emphasis}
-text, \alert{accent} parts or show \textbf{bold} results.
-      \end{minted}
-
-  \begin{center}becomes\end{center}
-
-  The theme provides sensible defaults to \emph{emphasis} text,
-  \alert{accent} parts or show \textbf{bold} results.
+\frametitle{Data Management: Importing CSV Datafiles}
+Complete the following steps to import the datafile:
+\begin{enumerate}
+^^I\item Direct Stata to the datafile by selecting \textbf{Browse..}
+^^I\item Choose the delimiter (the symbol that Stata recognises as separating individual data observations) - automatic is usually best
+^^I\item Just in the case with XLS/X files, if the first row represents the variable names, choose always under the appropriate option
+^^I\item Observe the preview and if everything looks in its proper format, press OK
+\end{enumerate}

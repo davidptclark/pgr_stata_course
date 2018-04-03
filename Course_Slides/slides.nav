@@ -90,42 +90,29 @@
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\slideentry {6}{0}{11}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\sectionentry {7}{Demo: Importing Datafiles}{38}{Demo: Importing Datafiles}{0}}
-\headcommand {\beamer@sectionpages {27}{37}}
-\headcommand {\beamer@subsectionpages {27}{37}}
-\headcommand {\slideentry {7}{0}{1}{38/38}{}{0}}
+\headcommand {\slideentry {6}{0}{12}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {7}{0}{2}{39/39}{}{0}}
+\headcommand {\sectionentry {7}{Demo: Importing Datafiles}{39}{Demo: Importing Datafiles}{0}}
+\headcommand {\beamer@sectionpages {27}{38}}
+\headcommand {\beamer@subsectionpages {27}{38}}
+\headcommand {\slideentry {7}{0}{1}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {7}{0}{3}{40/40}{}{0}}
+\headcommand {\sectionentry {8}{Browsing and Manipulating Data}{40}{Browsing and Manipulating Data}{0}}
+\headcommand {\beamer@sectionpages {39}{39}}
+\headcommand {\beamer@subsectionpages {39}{39}}
+\headcommand {\slideentry {8}{0}{1}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {7}{0}{4}{41/41}{}{0}}
+\headcommand {\sectionentry {9}{Conclusion}{41}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {40}{40}}
+\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\slideentry {9}{0}{1}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {7}{0}{5}{42/45}{}{0}}
-\headcommand {\beamer@framepages {42}{45}}
-\headcommand {\slideentry {7}{0}{6}{46/46}{}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {7}{0}{7}{47/47}{}{0}}
-\headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {7}{0}{8}{48/48}{}{0}}
-\headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {7}{0}{9}{49/49}{}{0}}
-\headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {7}{0}{10}{50/50}{}{0}}
-\headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {7}{0}{11}{51/51}{}{0}}
-\headcommand {\beamer@framepages {51}{51}}
-\headcommand {\sectionentry {8}{Conclusion}{52}{Conclusion}{0}}
-\headcommand {\beamer@sectionpages {38}{51}}
-\headcommand {\beamer@subsectionpages {38}{51}}
-\headcommand {\slideentry {8}{0}{1}{52/52}{}{0}}
-\headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {8}{0}{2}{53/53}{}{0}}
-\headcommand {\beamer@framepages {53}{53}}
-\headcommand {\slideentry {8}{0}{3}{54/54}{}{0}}
-\headcommand {\beamer@framepages {54}{54}}
-\headcommand {\beamer@partpages {1}{54}}
-\headcommand {\beamer@subsectionpages {52}{54}}
-\headcommand {\beamer@sectionpages {52}{54}}
-\headcommand {\beamer@documentpages {54}}
-\headcommand {\def \inserttotalframenumber {50}}
+\headcommand {\slideentry {9}{0}{2}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {9}{0}{3}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\beamer@partpages {1}{43}}
+\headcommand {\beamer@subsectionpages {41}{43}}
+\headcommand {\beamer@sectionpages {41}{43}}
+\headcommand {\beamer@documentpages {43}}
+\headcommand {\def \inserttotalframenumber {42}}

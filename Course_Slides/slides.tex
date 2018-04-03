@@ -431,6 +431,21 @@ We can characterise datasets into two broad sets:
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Data Management: A Quick Aside}
+Before we go ahead and learn to import and open different datafile types into Stata, \textbf{we need to make sure we're working on a blank canvas}, so to speak
+If we don't do this beforehand:
+\begin{enumerate}
+\item Stata will \textbf{refuse} to open other data as it will risk losing data that is already in memory
+\item It may, in theory, \textbf{corrupt} the imported data and/or the data in current memory
+\end{enumerate}
+So to avoid the risk of either of the two above outcomes, \textbf{we type in the following command into Stata before importing anything}:
+\begin{center}
+\mint[fontfamily=tt]{stata}|clear all|
+\end{center}
+This will \alert{clear literally everything from Stata's working memory}, including, most importantly, any open datafiles
+\end{frame}
+
+\begin{frame}[fragile]
 \frametitle{Data Management: Importing Stata Datafiles}
 \textbf{Stata datafiles} (.dta files)
 \begin{itemize}
@@ -485,7 +500,7 @@ Complete the following steps to import the datafile:
 \textbf{Comma-Seperate Values datafiles} (.csv files)
 \begin{itemize}
 	\item Other than Excel datafile types, another popular datafile format is the comma-seperate values (CSV) datafiles
-	\item They're popular as they do not require proprietary software to open or edit
+	\item They're popular as they \alert{do not require proprietary software to open or edit}
 	\item \textbf{Assuming that the datafile is stored in the current working directory}, use the following drop down menu path:
 \end{itemize}
 \begin{center}
@@ -514,120 +529,12 @@ Complete the following steps to import the datafile:
 
 \section{Demo: Importing Datafiles}
 
-\begin{frame}[fragile]
-  \frametitle{Typography}
-      \begin{minted}[fontsize=\small]{latex}
-The theme provides sensible defaults to \emph{emphasis}
-text, \alert{accent} parts or show \textbf{bold} results.
-      \end{minted}
-
-  \begin{center}becomes\end{center}
-
-  The theme provides sensible defaults to \emph{emphasis} text,
-  \alert{accent} parts or show \textbf{bold} results.
-\end{frame}
-\begin{frame}{Lists}
-  \begin{columns}[onlytextwidth]
-    \column{0.5\textwidth}
-      Items
-      \begin{itemize}
-        \item Milk \item Eggs \item Potatos
-      \end{itemize}
-
-    \column{0.5\textwidth}
-      Enumerations
-      \begin{enumerate}
-        \item First, \item Second and \item Last.
-      \end{enumerate}
-  \end{columns}
-\end{frame}
-\begin{frame}{Descriptions}
-  \begin{description}
-    \item[PowerPoint] Meeh.
-    \item[Beamer] Yeeeha.
-  \end{description}
-\end{frame}
-\begin{frame}{Animation}
-  \begin{itemize}[<+- | alert@+>]
-    \item \alert<4>{This is\only<4>{ really} important}
-    \item Now this
-    \item And now this
-  \end{itemize}
-\end{frame}
-\begin{frame}{Figures}
-  \begin{figure}
-    \newcounter{density}
-    \setcounter{density}{20}
-    \begin{tikzpicture}
-      \def\couleur{mLightBrown}
-      \path[coordinate] (0,0)  coordinate(A)
-                  ++( 90:5cm) coordinate(B)
-                  ++(0:5cm) coordinate(C)
-                  ++(-90:5cm) coordinate(D);
-      \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
-      \foreach \x in {1,...,40}{%
-          \pgfmathsetcounter{density}{\thedensity+20}
-          \setcounter{density}{\thedensity}
-          \path[coordinate] coordinate(X) at (A){};
-          \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
-                              -- (C) coordinate[pos=.10](B)
-                              -- (D) coordinate[pos=.10](C)
-                              -- (X) coordinate[pos=.10](D);
-          \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
-      }
-    \end{tikzpicture}
-    \caption{Rotated square from
-    \href{http://www.texample.net/tikz/examples/rotated-polygons/}{texample.net}.}
-  \end{figure}
-\end{frame}
-\begin{frame}{Tables}
-  \begin{table}
-    \caption{Largest cities in the world (source: Wikipedia)}
-    \begin{tabular}{lr}
-      \toprule
-      City & Population\\
-      \midrule
-      Mexico City & 20,116,842\\
-      Shanghai & 19,210,000\\
-      Peking & 15,796,450\\
-      Istanbul & 14,160,467\\
-      \bottomrule
-    \end{tabular}
-  \end{table}
-\end{frame}
-\begin{frame}{Blocks}
-
-  \begin{block}{This is a block title}
-    This is soothing.
-  \end{block}
-
-\end{frame}
-\begin{frame}{Math}
-  \begin{equation*}
-    e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n
-  \end{equation*}
-\end{frame}
-\begin{frame}{Quotes}
-  \begin{quote}
-    Veni, Vidi, Vici
-  \end{quote}
-\end{frame}
-
-\plain{Dark background}{\vspace{-2em}\begin{center}\includegraphics[width=\textwidth]{images/valley.jpg}\end{center}}
+\section{Browsing and Manipulating Data}
 
 \section{Conclusion}
 
 \begin{frame}{Summary}
 
-  Get the source of this theme and the demo presentation from
-
-  \begin{center}\url{github.com/matze/mtheme}\end{center}
-
-  The theme \emph{itself} is licensed under a
-  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
-  Attribution-ShareAlike 4.0 International License}.
-
-  \begin{center}\ccbysa\end{center}
 
 \end{frame}
 
