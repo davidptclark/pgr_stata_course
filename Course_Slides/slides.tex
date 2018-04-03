@@ -1,0 +1,530 @@
+\documentclass[10pt, compress]{beamer}
+
+\usetheme{m}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{minted}
+\usepackage{smartdiagram}
+
+\usemintedstyle{trac}
+
+\title{Data Management and Introduction to Stata}
+\subtitle{}
+\date{Thursday 12th April}
+\author{David Clark}
+\institute{University of Leeds}
+
+\begin{document}
+
+\maketitle
+
+\section{Introductions and Preamble}
+
+\begin{frame}[fragile]
+  \frametitle{Introductions}
+
+\textbf{David Clark}
+\begin{itemize}
+    \item Teaching Fellow in Economics
+    
+    \item Used Stata for 6(-ish) years ... still learning!
+\end{itemize}
+    
+   \textbf{Kausik Chaudhuri}
+\begin{itemize}
+    \item  Senior Lecturer in Economics
+    
+   \item  Used Stata for ..... 
+    
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Who is this course for?}
+    Targeted at anyone who has \textbf{no to little} experience using Stata
+    
+    Primarily for those engaging in \alert{quantitative} research (MRes/PhD)
+    
+    What to learn to use a statistical package that allows for both use of \textbf{point-and-click GUI} and \textbf{Stata's Markup and Control Language (SMCL)}
+      
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Who is this course for?}
+
+    For those who want to:
+        \begin{itemize}
+            \item \textbf{Organise and manage data}
+                \begin{itemize}
+                    \item Generating, reshaping, dropping and recoding
+                \end{itemize}
+            \item \textbf{Visualise data}
+                \begin{itemize}
+                    \item Scatter and line graphs
+                    \item Histograms
+                \end{itemize}
+            \item \textbf{Analyse data}
+                \begin{itemize}
+                    \item ANOVA
+                    \item Regression analysis
+                \end{itemize}
+            \item \textbf{Automate and reproduce workflow}
+                \begin{itemize}
+                    \item Log and do-files
+                    \item Loops
+                \end{itemize}
+        \end{itemize}
+      
+\end{frame}
+
+\section{What is Stata?}
+
+\begin{frame}[fragile]
+  \frametitle{What is Stata?}
+  Stata is a powerful statistical package with:
+  \begin{itemize}
+
+   \item  smart data-management facilities
+  
+   \item  a wide array of up-to-date statistical techniques
+  
+   \item  an excellent system for producing publication-quality graphs
+    
+  \end{itemize}
+  
+  Available on a variety of operating systems (Windows, Mac OS and Linux distributions)
+  
+  Also available in different varieties:
+  
+    \begin{itemize}
+
+   \item  IC (standard)
+  
+   \item SE (extended)
+  
+   \item  MP (multiprocessing)
+    
+  \end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Why not use X?}
+There are alternative statistical software packages you can use (to name a few):
+
+\begin{itemize}
+    \item R
+    \item Matlab
+    \item SAS
+    \item SPSS
+    \item Gauss
+    \item Gretl
+    \item Eviews
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Stata 14 Front End Graphic User Interface (GUI)}
+  \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{stata.png}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Stata 14 Front End GUI}
+Stata has an menu bar on the top and 5 internal windows.
+
+The \alert{main} window is the one in the middle (1 on the previous slide). It gives
+you all the output of your operations in Stata.
+
+The \alert{command window} (2) executes commands. 
+\begin{itemize}
+    \item You can type commands directly in this window as an alternative to using the menu system.
+    \item Stata will show you what the written command is for each action performed using the drop-down menus.
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Stata 14 Front End GUI}
+  
+  The \alert{review window} (3), lists all the operations preformed since opening
+Stata. If you click on one of your past commands, you will see the command
+being displayed in the Command window and you can re-run it by hitting the
+enter key.
+
+The \alert{variables window} (4) lists the variables in the current dataset (and their
+descriptions). When you double-click on the variable, it appears in the
+Command window.
+
+The \alert{properties window} (5) gives information about your dataset and your
+variables.
+
+\end{frame}
+
+\section{Stata Workflow}
+
+\begin{frame}[fragile]
+\frametitle{Stata Workflow}
+\begin{center}
+\usetikzlibrary{shapes.geometric} % required in the preamble
+\smartdiagramset{module shape=rectangle,
+font=\tiny,
+module minimum width=2cm,
+module minimum height=1cm,
+text width=1.7cm,
+circular distance=2cm,
+circular final arrow disabled=true,
+}
+\smartdiagram[circular diagram:clockwise]{File management, Data management, Descriptive statistics, Visualisation, Statistical analysis}
+\end{center}	
+\end{frame}
+
+\newcommand{\insm}{%
+\smash{\raisebox{.5\dimexpr3\baselineskip+4\itemsep+2\parskip}{$\left.\rule{0pt}{.5\dimexpr2\baselineskip+2\itemsep+2\parskip}\right\}$\ \parbox{5.5cm}{These two stages will consume the \alert{most time} in any research project}}}
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Stata Workflow}
+\begin{itemize}
+\item \textbf{File management}
+\item \textbf{Data management}
+\item \textbf{Descriptive statistics} \insm
+\item \textbf{Visualisation}
+\item \textbf{Statistical analysis}
+\end{itemize}
+\end{frame}
+
+\section{File Management}
+
+\begin{frame}[fragile]
+\frametitle{Stata Workflow: File Management}
+\begin{center}
+\usetikzlibrary{shapes.geometric} % required in the preamble
+\smartdiagramset{module shape=rectangle,
+font=\tiny,
+module minimum width=2cm,
+module minimum height=1cm,
+text width=1.7cm,
+circular distance=2cm,
+circular final arrow disabled=true,
+}
+\smartdiagram[circular diagram:clockwise]{\textbf{File management}, Data management, Descriptive statistics, Visualisation, Statistical analysis}
+\end{center}	
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management}
+\begin{itemize}
+\item This is often an aspect of using Stata that is \textbf{wrongly} overlooked
+\item Usually a facet that people return to after learning the syntax
+\item As researchers, \alert{one of our primary objectives}:
+\end{itemize}
+\begin{center}
+	\textbf{Replicability and reliability}
+\end{center}
+\begin{itemize}
+\item If, after testing your research hypothesis, using data, you discover some results of interest, \textbf{what use is this if they cannot be reproduced by others?}
+\item Hence, engraining good practices from the beginning, \alert{promotes higher-quality research} in future work
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management}
+\begin{itemize}
+\item What do we mean by \textbf{file management}?
+\begin{itemize}
+\item Typically, when people (\alert{most}) begin using Stata, they will just open some data and \textbf{do stuff}
+\end{itemize}
+\item Questions that arise:
+\begin{itemize}
+\item \textbf{Where is the data stored?}
+\item \textbf{Where is the output stored?}
+\item \textbf{Where is Stata currently working from?}
+\item \textbf{Are we utilising one or many directories?}
+\end{itemize}
+\item File management is knowing the answer to these questions constantly and having a good justification for their placement
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management}
+\begin{center}
+	\textbf{Where is Stata currently working from?}
+\end{center}
+\begin{itemize}
+\item \alert{Definition}: \textbf{working directory}
+\begin{itemize}
+\item The (\alert{current}) working directory is the file within the computer's hierarchical file structure that a program is working from
+\end{itemize}
+\item That is to say, anything you ask Stata to open or to save will be accessed or stored in this working directory
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management}
+\begin{center}
+	\textbf{Where is Stata currently working from?}
+\end{center}
+\begin{itemize}
+\item There are two ways of finding out what the current working directory is in Stata:
+\begin{itemize}
+\item Look at the bottom-left hand corner of Stata
+\end{itemize}
+\smallskip
+\begin{center}
+\includegraphics{pwd1.png}
+\end{center}
+\begin{itemize}
+\item Type the command \textbf{pwd} into the command window in Stata
+\end{itemize}
+\begin{center}
+\includegraphics{pwd2.png}
+\end{center}
+\item Both are telling us that we are working out of the \textbf{Downloads} folder
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management}
+\begin{itemize}
+\item On the University system, this usually is set as a default to the personal drive (M:/)
+\item In either case, \textbf{is it a good idea to work out of an indiscriminate folder?}
+\begin{itemize}
+\item \textbf{Almost always, no!}
+\item Why? $\to$ There will be unrelated files that will make it complex to keep track of related files and output
+\end{itemize}
+So, we have two options what we can proceed with that adhere to \textbf{good practice}:
+\begin{itemize}
+\item \alert{Change} to a directory that already exists
+\item \alert{Create} a directory to work from
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management: Changing Directory}
+\begin{itemize}
+\item If the folder that you want to work from \alert{already exists}, we can tell Stata to change the working directory to this folder.
+\item For example, imagine I have a folder called \textbf{Thesis$\_$Paper$\_$One} and here is the path (note, this was the file path on my Mac, it will look slightly different on Windows PCs):
+\end{itemize}
+\begin{center}
+\textbf{Users $\to$ David $\to$ Documents $\to$ Projects $\to$ Thesis$\_$Paper$\_$One}
+\end{center}
+\begin{itemize}
+\item This can be done in two ways:
+\begin{itemize}
+\item Using the drop down menus in the GUI
+\item Using the \textbf{cwd} command directly
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management: Changing Directory}
+\textbf{Using the drop down menus in the GUI}
+\begin{itemize}
+\item If you follow this menu path:
+\end{itemize}
+\begin{center}
+\textbf{File $\to$ Change working directory...}
+\end{center}
+\begin{itemize}
+\item Stata will then open a \alert{file explorer window} where you can navigate to, and choose, the folder you wish to set as the current working directory
+\item This is a useful method if \textbf{you do not have the exact file path to hand}
+\item Notice, Stata will then print the exact file path in the output window after changing working directory successfully.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management: Changing Directory}
+\textbf{Using the drop down menus in the GUI}
+\begin{itemize}
+\item If you already happen to know the file path to the directory, we can type the change directory command directly into the command prompt:
+\end{itemize}
+\begin{center}
+\mint[fontfamily=tt]{stata}| cd "/Users/David/Documents/Projects/Thesis_Paper_One" |
+\end{center}
+\textbf{Breakdown}
+\begin{itemize}
+\item \mint[fontfamily=tt]{stata}|cd| Tells Stata to \textbf{change directory}
+\item \mint[fontfamily=tt]{stata}| "/Users/David/Documents/Projects/Thesis_Paper_One" | \textbf{Provides Stata with the file path} to the directory that you will want to change to
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{File Management: Creating a Directory}
+\begin{itemize}
+\item Perhaps you want to create the folder, as part of a new project, which we'll call \textbf{Thesis$\_$Paper$\_$Two}
+\item Here, we can only use the command prompt, by typing the following command
+\end{itemize}
+\begin{center}
+\mint[fontfamily=tt, fontsize=\small]{stata}| mkdir "/Users/David/Documents/Projects/Thesis_Paper_Two" |
+\end{center}
+\textbf{Breakdown}
+\begin{itemize}
+\item \mint[fontfamily=tt, fontsize=\small]{stata}|mkdir| Tells Stata to \textbf{create a new folder in this directory}
+\item \mint[fontfamily=tt, fontsize=\small]{stata}| "/Users/David/Documents/Projects/Thesis_Paper_Two" | \textbf{Provides Stata with the file path} to the directory that you will want to move to (\alert{Projects}) and create a folder in there called \alert{Thesis$\_$Paper$\_$Two}
+\end{itemize}
+\end{frame}
+
+\section{Demo: Changing and Creating Directories}
+
+\section{Data Management}
+
+\begin{frame}[fragile]
+\frametitle{Stata Workflow: Data Management}
+\begin{center}
+\usetikzlibrary{shapes.geometric} % required in the preamble
+\smartdiagramset{module shape=rectangle,
+font=\tiny,
+module minimum width=2cm,
+module minimum height=1cm,
+text width=1.7cm,
+circular distance=2cm,
+circular final arrow disabled=true,
+}
+\smartdiagram[circular diagram:clockwise]{File management, \textbf{Data management}, Descriptive statistics, Visualisation, Statistical analysis}
+\end{center}	
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Data Management}
+\begin{itemize}
+\item As stated previously, the data management aspect of the workflow is arguably \textbf{one of the most important (and time-consuming) stages of a research project}
+\item \textbf{Why?}
+\begin{itemize}
+\item Data \alert{might not be native to Stata}, so it must be imported correctly
+\item Datasets, particularly survey data, may have some \alert{errors in their reporting and may require our attention}
+\item You may want to gather data from different datasets and \alert{consolidate them into one master dataset}
+\item Perhaps you want to \alert{create new variables} based on the original data
+\end{itemize}
+\item Taking the time to carry out this stage properly will \textbf{save you time in the long run}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Typography}
+      \begin{minted}[fontsize=\small]{latex}
+The theme provides sensible defaults to \emph{emphasis}
+text, \alert{accent} parts or show \textbf{bold} results.
+      \end{minted}
+
+  \begin{center}becomes\end{center}
+
+  The theme provides sensible defaults to \emph{emphasis} text,
+  \alert{accent} parts or show \textbf{bold} results.
+\end{frame}
+\begin{frame}{Lists}
+  \begin{columns}[onlytextwidth]
+    \column{0.5\textwidth}
+      Items
+      \begin{itemize}
+        \item Milk \item Eggs \item Potatos
+      \end{itemize}
+
+    \column{0.5\textwidth}
+      Enumerations
+      \begin{enumerate}
+        \item First, \item Second and \item Last.
+      \end{enumerate}
+  \end{columns}
+\end{frame}
+\begin{frame}{Descriptions}
+  \begin{description}
+    \item[PowerPoint] Meeh.
+    \item[Beamer] Yeeeha.
+  \end{description}
+\end{frame}
+\begin{frame}{Animation}
+  \begin{itemize}[<+- | alert@+>]
+    \item \alert<4>{This is\only<4>{ really} important}
+    \item Now this
+    \item And now this
+  \end{itemize}
+\end{frame}
+\begin{frame}{Figures}
+  \begin{figure}
+    \newcounter{density}
+    \setcounter{density}{20}
+    \begin{tikzpicture}
+      \def\couleur{mLightBrown}
+      \path[coordinate] (0,0)  coordinate(A)
+                  ++( 90:5cm) coordinate(B)
+                  ++(0:5cm) coordinate(C)
+                  ++(-90:5cm) coordinate(D);
+      \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
+      \foreach \x in {1,...,40}{%
+          \pgfmathsetcounter{density}{\thedensity+20}
+          \setcounter{density}{\thedensity}
+          \path[coordinate] coordinate(X) at (A){};
+          \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
+                              -- (C) coordinate[pos=.10](B)
+                              -- (D) coordinate[pos=.10](C)
+                              -- (X) coordinate[pos=.10](D);
+          \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
+      }
+    \end{tikzpicture}
+    \caption{Rotated square from
+    \href{http://www.texample.net/tikz/examples/rotated-polygons/}{texample.net}.}
+  \end{figure}
+\end{frame}
+\begin{frame}{Tables}
+  \begin{table}
+    \caption{Largest cities in the world (source: Wikipedia)}
+    \begin{tabular}{lr}
+      \toprule
+      City & Population\\
+      \midrule
+      Mexico City & 20,116,842\\
+      Shanghai & 19,210,000\\
+      Peking & 15,796,450\\
+      Istanbul & 14,160,467\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+\begin{frame}{Blocks}
+
+  \begin{block}{This is a block title}
+    This is soothing.
+  \end{block}
+
+\end{frame}
+\begin{frame}{Math}
+  \begin{equation*}
+    e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n
+  \end{equation*}
+\end{frame}
+\begin{frame}{Quotes}
+  \begin{quote}
+    Veni, Vidi, Vici
+  \end{quote}
+\end{frame}
+
+\plain{Dark background}{\vspace{-2em}\begin{center}\includegraphics[width=\textwidth]{images/valley.jpg}\end{center}}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+
+  Get the source of this theme and the demo presentation from
+
+  \begin{center}\url{github.com/matze/mtheme}\end{center}
+
+  The theme \emph{itself} is licensed under a
+  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License}.
+
+  \begin{center}\ccbysa\end{center}
+
+\end{frame}
+
+\plain{}{Questions?}
+
+\end{document}
