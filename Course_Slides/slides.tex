@@ -409,6 +409,112 @@ circular final arrow disabled=true,
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Data Management: Importing Data}
+We can characterise datasets into two broad sets:
+\begin{itemize}
+\item \textbf{Stata datafiles} (.dta files)
+\begin{itemize}
+\item This is the file type that Stata can read and work with \alert{natively}; as such it requires little work to open
+\end{itemize}
+\item \textbf{All other types of datafile}
+\begin{itemize}
+\item This is a huge set but these have to imported as a \alert{foreign} datafile
+\item While the list is endless, we will focus only on:
+\begin{itemize}
+\item CSV
+\item XLS
+\item XLSX
+\end{itemize}
+\end{itemize}
+\item If there are other datasets from particular programs you'd like to import, consider the program \textbf{StatTransfer - \alert{not free}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing Stata Datafiles}
+\textbf{Stata datafiles} (.dta files)
+\begin{itemize}
+	\item As previously stated, these are native to Stata and so are very easily open and read by Stata
+	\item \textbf{Assuming that the datafile is stored in the current working directory}, use the following drop down menu path:
+\end{itemize}
+\begin{center}
+\textbf{File $\to$ Open}
+\end{center}
+\begin{itemize}
+	\item Once you've done this, you can navigate to the datafile and then double-click to open
+	\item An easy way to verify the data is now loaded into to Stata is to check the \alert{variables window}
+	\item If you see variables names in there, \alert{you've successfully opened your Stata datafile}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing XLS/X Datafiles}
+\textbf{Excel datafiles} (.xls/x files)
+\begin{itemize}
+	\item Despite secondary data being provided in a .dta format more frequently - \textbf{it is more common for the data to be provided as an Excel file} (either .xls or .xlsx file types)
+	\item This is not quite as strightforward as opening a .dta file but it is luckily not too complex an operation
+	\item \textbf{Assuming that the datafile is stored in the current working directory}, use the following drop down menu path:
+\end{itemize}
+\begin{center}
+\textbf{File $\to$ Import $\to$ Excel Spreadsheet (*.xls;*.xlsx)}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing XLS/X Datafiles}
+ After following the drop-down path, you'll be presented with the following window:
+\begin{center}
+\includegraphics[width=7cm,height=6cm,keepaspectratio]{xls.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing XLS/X Datafiles}
+Complete the following steps to import the datafile:
+\begin{enumerate}
+	\item Direct Stata to the datafile by selecting \textbf{Browse..}
+	\item Choose the worksheet that your data is in within the workbook
+	\item Typically, the heading of each column of the spreadsheet will contain the variable name. Select the option, \textbf{Import first row as variable names}
+	\item In the preview pane at the bottom of the window, you can confirm here that the data is being imported correctly
+	\item Finally, press OK and Stata should have then successfully imported the Excel datafile
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing CSV Datafiles}
+\textbf{Comma-Seperate Values datafiles} (.csv files)
+\begin{itemize}
+	\item Other than Excel datafile types, another popular datafile format is the comma-seperate values (CSV) datafiles
+	\item They're popular as they do not require proprietary software to open or edit
+	\item \textbf{Assuming that the datafile is stored in the current working directory}, use the following drop down menu path:
+\end{itemize}
+\begin{center}
+\textbf{File $\to$ Import $\to$ Text data (delimited;*.csv)}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing CSV Datafiles}
+ After following the drop-down path, you'll be presented with the following window:
+\begin{center}
+\includegraphics[width=6cm,height=8cm,keepaspectratio]{csv.png}
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data Management: Importing CSV Datafiles}
+Complete the following steps to import the datafile:
+\begin{enumerate}
+	\item Direct Stata to the datafile by selecting \textbf{Browse..}
+	\item Choose the delimiter (the symbol that Stata recognises as separating individual data observations) - automatic is usually best
+	\item Just in the case with XLS/X files, if the first row represents the variable names, choose always under the appropriate option
+	\item Observe the preview and if everything looks in its proper format, press OK 
+\end{enumerate}
+\end{frame}
+
+\section{Demo: Importing Datafiles}
+
+\begin{frame}[fragile]
   \frametitle{Typography}
       \begin{minted}[fontsize=\small]{latex}
 The theme provides sensible defaults to \emph{emphasis}

@@ -4,4 +4,5 @@
 \beamer@sectionintoc {4}{File Management}{15}{0}{4}
 \beamer@sectionintoc {5}{Demo: Changing and Creating Directories}{26}{0}{5}
 \beamer@sectionintoc {6}{Data Management}{27}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{43}{0}{7}
+\beamer@sectionintoc {7}{Demo: Importing Datafiles}{38}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{52}{0}{8}

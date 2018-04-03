@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  3 APR 2018 12:37
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  3 APR 2018 13:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1580,25 +1580,80 @@ LaTeX Font Warning: Font shape `TU/FiraMono-Regular.ttf(0)/bx/n' undefined
 \openout4 = `slides.vrb'.
 
  (./slides.vrb
+
+LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(1)/bx/n' undefined
+(Font)              using `TU/FiraSans-Light.ttf(1)/m/n' instead on input line 18.
+
+) [30
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [31
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [32
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+File: xls.png Graphic file (type QTm)
+ <use  "xls.png" >) [33
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [34
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [35
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+File: csv.png Graphic file (type QTm)
+ <use  "csv.png" >)
+Overfull \vbox (6.84766pt too high) detected at line 502
+ []
+
+[36
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [37
+
+] [38
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
 \openout5 = `slides.pyg'.
 
- (./_minted-slides/67E13A697A04092B2F9687AA6A2491975E1CCC81334BFA40AAB4A66B2AAA7E90.pygtex)) [30
+ (./_minted-slides/67E13A697A04092B2F9687AA6A2491975E1CCC81334BFA40AAB4A66B2AAA7E90.pygtex)) [39
 
-] [31
+] [40
 
-] [32
+] [41
 
-] [33
+] [42
 
-] [34
+] [43
 
-] [35
+] [44
 
-] [36
+] [45
 
 ]
 \c@density=\count313
- [37
+ [46
 
 ]
 .................................................
@@ -1619,27 +1674,27 @@ LaTeX Font Warning: Font shape `TU/FiraMono-Regular.ttf(0)/bx/n' undefined
 . - 'bold small caps'  (bx/sc) with NFSS spec.:
 . <->"[fonts/FiraSans-Regular.ttf]/OT:script=latn;language=DFLT;+tnum;+smcp;mapping=tex-text;"
 .................................................
-LaTeX Info: Redefining \sffamily on input line 491.
- [38
+LaTeX Info: Redefining \sffamily on input line 597.
+ [47
 
-] [39
+] [48
 
-] [40
+] [49
 
-] [41
+] [50
 
 ]
 File: images/valley.jpg Graphic file (type QTm)
- <use  "images/valley.jpg" > [42
+ <use  "images/valley.jpg" > [51
 
-] [43
+] [52
 
 ]
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 20.0pt on input line 526.
- [44
+(Font)              scaled to size 20.0pt on input line 632.
+ [53
 
-] [45
+] [54
 
 ]
 \tf@nav=\write9
@@ -1651,11 +1706,11 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 \tf@snm=\write11
 \openout11 = `slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
  (./slides.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 530.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 530.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 636.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 636.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1664,12 +1719,12 @@ runsystem(rm slides.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37107 strings out of 493005
- 764125 string characters out of 6134596
- 888738 words of memory out of 5000000
- 40326 multiletter control sequences out of 15000+600000
- 10038 words of font info for 76 fonts, out of 8000000 for 9000
+ 37179 strings out of 493005
+ 765601 string characters out of 6134596
+ 889365 words of memory out of 5000000
+ 40379 multiletter control sequences out of 15000+600000
+ 10046 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,12n,91p,10380b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on slides.pdf (45 pages).
+Output written on slides.pdf (54 pages).
