@@ -7,6 +7,7 @@
 \usepackage{minted}
 \usepackage{smartdiagram}
 
+
 \usemintedstyle{trac}
 
 \title{Data Management and Introduction to Stata}
@@ -58,7 +59,7 @@
         \begin{itemize}
             \item \textbf{Organise and manage data}
                 \begin{itemize}
-                    \item Generating, reshaping, dropping and recoding
+                    \item Generating, keeping and dropping, reshaping
                 \end{itemize}
             \item \textbf{Visualise data}
                 \begin{itemize}
@@ -530,6 +531,198 @@ Complete the following steps to import the datafile:
 \section{Demo: Importing Datafiles}
 
 \section{Browsing and Manipulating Data}
+
+\begin{frame}[fragile]
+\frametitle{Browsing and Manipulating Data}
+So, regardless of how your data had been stored originally, \textbf{you should be aware} of how to import the datafile into Stata
+
+\begin{center}
+\alert{Now what?}	
+\end{center}
+
+\begin{center}
+\textbf{This is where we get started with Stata!}	
+\end{center}
+
+What might you want to do immediately after importing data?
+\begin{enumerate}
+	\item Browse the data
+	\item Edit the data
+	\item Generate new variables  
+\end{enumerate}
+Keep in mind, before we've imported and formatted the data correctly, \textbf{we should not be embarking on any type of statistical analysis}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Browsing Data}
+Despite the fact we saw a preview of the data when importing CSV/XLS datafiles, we don't really know how the data looks\\
+
+Something we can do is \alert{browse} the dataset by simply typing:
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|browse|
+\end{center}
+
+When you do so, you should see the following window open on your screen...
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Browsing Data}
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{browse.png}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Browsing Data}
+That's great but \textbf{what's going on in this huge window?}
+\begin{enumerate}
+\item \textbf{Main window}
+\begin{itemize}
+	\item This is main data browser pane within the browse window
+	\item Here, we can see all our \textbf{variables and the observations for each individual unit in the dataset} (\alert{notice some are in red? We'll come back to this})
+\end{itemize}
+\item \textbf{Top-right corner}
+\begin{itemize}
+	\item This is the \textbf{variables pane}
+	\item Here you can see each of the variables within the dataset as well as their label
+	\item You can (un)tick them to filter the data in the browser pane
+\end{itemize}
+\item \textbf{Bottom-right corner}
+\begin{itemize}
+	\item This is the \textbf{properties} pane
+	\item It displays information about the selected variable - notably the \textbf{variable type}
+\end{itemize}	
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{A Quick Aside - Variable Types}
+In the last window, you've probably noticed that the observations for the variable \alert{make} were all in \textbf{red}, whilst the others were just in \textbf{black} text
+
+\begin{center}
+\alert{Any ideas why?}	
+\end{center}
+
+We could go into \textbf{a lot} of detail about this but simply put:
+\begin{itemize}
+	\item When you see the observations of a variable in \textbf{red}, this signifies that the variable is of type \textbf{string} - that's to say the data is a word or contains text
+	\item Otherwise, when the data is in black, this usually signifies that data is stored as a \textbf{numeric type} (e.g. \alert{float, integer, double})
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Manipulating Data: Editing}
+When it comes to \textbf{manipulating/changing the data}, for whatever reason, there are a few ways of doing this:
+
+\begin{enumerate}
+\item Editing the data within the browser directly (\textbf{not recommended})
+\begin{itemize}
+\item \alert{Why?} $ \to\ $ piecemeal changes of the data doesn't speak to \textbf{replicability and reliability}
+\end{itemize}
+\item Using a suite of commands that allow you to change aspects of a variable (\textbf{recommended}) - these include: 
+\begin{itemize}
+\item \mint[fontfamily=tt]{stata}|rename| - renaming variables
+\item \mint[fontfamily=tt]{stata}|keep| - keep a variable or observations in a range
+\item \mint[fontfamily=tt]{stata}|drop| - drop a variable or observations in a range
+\item \mint[fontfamily=tt]{stata}|generate| - create a new variable
+\end{itemize}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Manipulating Data: Renaming and Labelling Variables}
+\underline{\textbf{Renaming variables:}}\\
+\alert{Syntax}
+\begin{center}
+\mint[fontfamily=tt]{stata}|rename [oldname] [newname]|
+\end{center}
+\alert{Example}
+\begin{center}
+\mint[fontfamily=tt]{stata}|rename year Year|
+\end{center}
+\underline{\textbf{Labelling variables:}}\\
+\alert{Syntax}
+\begin{center}
+\mint[fontfamily=tt]{stata}|label variable [varname] "[label]"|
+\end{center}
+\alert{Example}
+\begin{center}
+\mint[fontfamily=tt]{stata}|label variable Year "Year survey took place"|
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Manipulating Data: Keeping and Dropping Variables}
+\begin{itemize}
+\item The original dataset may contain variables you are \textbf{not interested in} or \textbf{observations you don't want to analyse} 
+\item It's a good idea to get rid of these first - that way, they won't use up valuable memory and these data will not inadvertently be included into your statistical analysis
+\item This can be done using either:
+\begin{itemize}
+\item \mint[fontfamily=tt]{stata}|keep|
+\item \mint[fontfamily=tt]{stata}|drop|
+\end{itemize}
+\end{itemize}
+\alert{Syntax (applies to drop also)}
+\begin{center}
+\mint[fontfamily=tt]{stata}|keep [varlist] |
+\end{center}
+\alert{Example}
+\begin{center}
+\mint[fontfamily=tt]{stata}|keep id age year health|
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Manipulating Data: Keeping and Dropping Variables}
+\begin{itemize}
+\item The previous slide shows the most straightforward implementation of the \alert{keep and drop} commands, however we can make these commands more complex by using what are called \textbf{relational} and \textbf{logical operators}
+\item This is a better alternative to piecemeal edits to the data, as \textbf{you can set particular conditions to which data is kept or dropped} given your own research ideals
+\item While you may not use all of them, the next slide lists all the available operators that \textbf{you can use with commands in Stata that have the option of setting a conditional}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Relational and Logical Operators}
+  \begin{columns}[onlytextwidth]
+    \column{0.5\textwidth}
+      \textbf{Relational}
+      \begin{itemize}
+\item \mint[fontfamily=tt]{stata}|==| equal to\item \mint[fontfamily=tt]{stata}|!=| not equal to\item \mint[fontfamily=tt]{stata}|>| greater than\item \mint[fontfamily=tt]{stata}|>=| greater than or equal to\item \mint[fontfamily=tt]{stata}|<| less than\item \mint[fontfamily=tt]{stata}|<=| less than or equal to
+      \end{itemize}
+
+    \column{0.5\textwidth}
+     \textbf{Logical}
+      \begin{itemize}
+     \item  \mint[fontfamily=tt]{stata}|&| and	\item \mint[fontfamily=tt]{stata}||| or	\item \mint[fontfamily=tt]{stata}|~| not	\item \mint[fontfamily=tt]{stata}|!| not
+      \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Manipulating Data: Using Conditionals}
+
+\end{frame}
+
+\section{Descriptive Statistics}
+
+\begin{frame}[fragile]
+\frametitle{Stata Workflow: Descriptive Statistics}
+\begin{center}
+\usetikzlibrary{shapes.geometric} % required in the preamble
+\smartdiagramset{module shape=rectangle,
+font=\tiny,
+module minimum width=2cm,
+module minimum height=1cm,
+text width=1.7cm,
+circular distance=2cm,
+circular final arrow disabled=true,
+}
+\smartdiagram[circular diagram:clockwise]{File management, Data management, \textbf{Descriptive statistics}, Visualisation, Statistical analysis}
+\end{center}	
+\end{frame}
 
 \section{Conclusion}
 

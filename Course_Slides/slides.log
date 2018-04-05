@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  3 APR 2018 14:00
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  4 APR 2018 13:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1274,30 +1274,30 @@ runsystem(rm slides.aex)...executed.
  (./slides.aux)
 \openout1 = `slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1335,7 +1335,7 @@ LaTeX Font Info:    ... okay on input line 18.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box87
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1343,55 +1343,55 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
  (./slides.out) (./slides.out)
 \@outlinefile=\write8
 \openout8 = `slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 19.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 18.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/FiraSans-Light.ttf(0)/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> TU/FiraSans-Light.ttf(0)/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/FiraSans-Light.ttf(0)/m/n on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 18.
+(Font)                  OT1/cmss/bx/n --> TU/FiraSans-Light.ttf(0)/m/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/FiraSans-Light.ttf(0)/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> TU/FiraSans-Light.ttf(0)/m/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/FiraSans-Light.ttf(0)/m/it on input line 18.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 18.
+(Font)                  OT1/cmr/bx/it --> TU/FiraSans-Light.ttf(0)/m/it on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono-Regular.ttf(0)/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono-Regular.ttf(0)/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono-Regular.ttf(0)/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono-Regular.ttf(0)/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/FiraSans-Light.ttf(0)/m/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 18.
+(Font)                  TU/FiraSans-Light.ttf(0)/m/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/FiraSans-Light.ttf(0)/m/it --> TU/FiraSans-Light.ttf(0)/bx/it on input line 18.
+(Font)                  TU/FiraSans-Light.ttf(0)/m/it --> TU/FiraSans-Light.ttf(0)/bx/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/FiraSans-Light.ttf(0)/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 18.
+(Font)                  TU/FiraSans-Light.ttf(0)/bx/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/FiraSans-Light.ttf(0)/m/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 18.
+(Font)                  TU/FiraSans-Light.ttf(0)/m/n --> TU/FiraSans-Light.ttf(0)/bx/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/FiraSans-Light.ttf(0)/m/it --> TU/FiraSans-Light.ttf(0)/bx/it on input line 18.
+(Font)                  TU/FiraSans-Light.ttf(0)/m/it --> TU/FiraSans-Light.ttf(0)/bx/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/FiraMono-Regular.ttf(0)/m/n --> TU/FiraMono-Regular.ttf(0)/bx/n on input line 18.
+(Font)                  TU/FiraMono-Regular.ttf(0)/m/n --> TU/FiraMono-Regular.ttf(0)/bx/n on input line 19.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
@@ -1405,7 +1405,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 18.
+LaTeX Info: Redefining \includegraphics on input line 19.
  (./slides.nav) [1
 
 ] [2
@@ -1627,7 +1627,7 @@ File: xls.png Graphic file (type QTm)
  (./slides.vrb
 File: csv.png Graphic file (type QTm)
  <use  "csv.png" >)
-Overfull \vbox (6.84766pt too high) detected at line 517
+Overfull \vbox (6.84766pt too high) detected at line 518
  []
 
 [37
@@ -1641,11 +1641,145 @@ Overfull \vbox (6.84766pt too high) detected at line 517
 
 ] [40
 
-] [41
+]
+\openout4 = `slides.vrb'.
 
-] [42
+ (./slides.vrb) [41
 
-] [43
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/0ABC5DB2FE6ACC6D37DC5AD4633E26DE8D627730F5AB356F16ABBF417A933F35.pygtex)) [42
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+File: browse.png Graphic file (type QTm)
+ <use  "browse.png" >) [43
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [44
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [45
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/92BEC5949F0399E5A0380117B24654228D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/B260098AFC93A054427D63C4DE6BE6A18D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/08914B150CDD6888BF32D668C93361698D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/F1FC258E19D2E389B16985AA19A4F4A78D627730F5AB356F16ABBF417A933F35.pygtex)) [46
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/3C40F5339D4EF3E9AAF05E2947571BFB8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/C247AE7A5D7B6183B2C0C7726FF372E58D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/97039FAD08A4D2B77E03CF7A155E76F58D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/C2337169A54A5794C7549575BDFDE1178D627730F5AB356F16ABBF417A933F35.pygtex)) [47
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/B260098AFC93A054427D63C4DE6BE6A18D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/08914B150CDD6888BF32D668C93361698D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/7C948FE88600921019FA3A43981700318D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/0A2C9E0AA56DDCB7BF1F2A24F2F4587B8D627730F5AB356F16ABBF417A933F35.pygtex)) [48
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [49
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/CA0B1C26E4FE93007BCDCBB8E774884D8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/A65D5ACC20AD1F6C138540681B6C334C8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/EE9F11505D0160B459A18BFC992CE4FC8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/E7FB8B0240FDE08A2FAA4C55C9C740A98D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/467666C12F45D4E6B3E37CCCBCB6E1F88D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/5B41510F6FCF2140EDE26C7FD80B42F98D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+
+(./_minted-slides/9057F0A25694333E78EEC69CDE859DD78D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/68B329DA9893E34099C7D8AD5CB9C9408D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/D0781A20299A0AC7F2473649CF514ABC8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/8183AA57A23658EFE7BA7AEBE60816BC8D627730F5AB356F16ABBF417A933F35.pygtex)) [50
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [51
+
+] [52
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [53
+
+] [54
+
+] [55
+
+] [56
 
 ]
 \tf@nav=\write9
@@ -1657,11 +1791,11 @@ Overfull \vbox (6.84766pt too high) detected at line 517
 \tf@snm=\write11
 \openout11 = `slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 744.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 744.
  (./slides.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 543.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 543.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 744.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 744.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1670,12 +1804,12 @@ runsystem(rm slides.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36975 strings out of 493005
- 761304 string characters out of 6134596
- 876564 words of memory out of 5000000
- 40180 multiletter control sequences out of 15000+600000
+ 37119 strings out of 493005
+ 769008 string characters out of 6134596
+ 880332 words of memory out of 5000000
+ 40232 multiletter control sequences out of 15000+600000
  10008 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,12n,91p,10380b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on slides.pdf (43 pages).
+Output written on slides.pdf (56 pages).
