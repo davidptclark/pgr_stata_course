@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  4 APR 2018 13:05
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.6)  8 APR 2018 19:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1441,20 +1441,27 @@ LaTeX Info: Redefining \includegraphics on input line 19.
 \openout4 = `slides.vrb'.
 
  (./slides.vrb
-File: stata.png Graphic file (type QTm)
- <use  "stata.png" >) [9
+File: curve.png Graphic file (type QTm)
+ <use  "curve.png" >) [9
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [10
+ (./slides.vrb
+File: stata.png Graphic file (type QTm)
+ <use  "stata.png" >) [10
 
 ]
 \openout4 = `slides.vrb'.
 
  (./slides.vrb) [11
 
-] [12
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [12
+
+] [13
 
 ]
 \openout4 = `slides.vrb'.
@@ -1463,7 +1470,7 @@ File: stata.png Graphic file (type QTm)
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
-))) [13
+))) [14
 
 ]
 \openout4 = `slides.vrb'.
@@ -1481,14 +1488,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(0)/m/it' undefined
 (Font)              using `TU/FiraSans-Light.ttf(0)/m/n' instead on input line 5.
 
-) [14
+) [15
 
-] [15
-
-]
-\openout4 = `slides.vrb'.
-
- (./slides.vrb) [16
+] [16
 
 ]
 \openout4 = `slides.vrb'.
@@ -1508,16 +1510,16 @@ LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(0)/m/it' undefined
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb
-File: pwd1.png Graphic file (type QTm)
- <use  "pwd1.png" >
-File: pwd2.png Graphic file (type QTm)
- <use  "pwd2.png" >) [20
+ (./slides.vrb) [20
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [21
+ (./slides.vrb
+File: pwd1.png Graphic file (type QTm)
+ <use  "pwd1.png" >
+File: pwd2.png Graphic file (type QTm)
+ <use  "pwd2.png" >) [21
 
 ]
 \openout4 = `slides.vrb'.
@@ -1528,6 +1530,11 @@ File: pwd2.png Graphic file (type QTm)
 \openout4 = `slides.vrb'.
 
  (./slides.vrb) [23
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [24
 
 ]
 \openout4 = `slides.vrb'.
@@ -1546,7 +1553,7 @@ LaTeX Font Warning: Font shape `TU/FiraMono-Regular.ttf(0)/bx/n' undefined
  (./_minted-slides/0C22F99BD4736D8EBBB0ECDA75E7B2548D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/4C8412537A6ABEC43D039EE1D3CDB5DF8D627730F5AB356F16ABBF417A933F35.pygtex)) [24
+ (./_minted-slides/4C8412537A6ABEC43D039EE1D3CDB5DF8D627730F5AB356F16ABBF417A933F35.pygtex)) [25
 
 ]
 \openout4 = `slides.vrb'.
@@ -1560,16 +1567,11 @@ LaTeX Font Warning: Font shape `TU/FiraMono-Regular.ttf(0)/bx/n' undefined
  (./_minted-slides/9E85C099A5D5155DA0F4671BA34C60648D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/509E0DAF2B9D22AD290BF8BB0CF3DEB88D627730F5AB356F16ABBF417A933F35.pygtex)) [25
-
-] [26
+ (./_minted-slides/509E0DAF2B9D22AD290BF8BB0CF3DEB88D627730F5AB356F16ABBF417A933F35.pygtex)) [26
 
 ] [27
 
-]
-\openout4 = `slides.vrb'.
-
- (./slides.vrb) [28
+] [28
 
 ]
 \openout4 = `slides.vrb'.
@@ -1579,12 +1581,17 @@ LaTeX Font Warning: Font shape `TU/FiraMono-Regular.ttf(0)/bx/n' undefined
 ]
 \openout4 = `slides.vrb'.
 
+ (./slides.vrb) [30
+
+]
+\openout4 = `slides.vrb'.
+
  (./slides.vrb
 
 LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(1)/bx/n' undefined
 (Font)              using `TU/FiraSans-Light.ttf(1)/m/n' instead on input line 18.
 
-) [30
+) [31
 
 ]
 \openout4 = `slides.vrb'.
@@ -1592,12 +1599,7 @@ LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(1)/bx/n' undefined
  (./slides.vrb
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/BC6DB8C63C2DF0AC817C4BD001966E868D627730F5AB356F16ABBF417A933F35.pygtex)) [31
-
-]
-\openout4 = `slides.vrb'.
-
- (./slides.vrb) [32
+ (./_minted-slides/BC6DB8C63C2DF0AC817C4BD001966E868D627730F5AB356F16ABBF417A933F35.pygtex)) [32
 
 ]
 \openout4 = `slides.vrb'.
@@ -1607,14 +1609,14 @@ LaTeX Font Warning: Font shape `TU/FiraSans-Light.ttf(1)/bx/n' undefined
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb
-File: xls.png Graphic file (type QTm)
- <use  "xls.png" >) [34
+ (./slides.vrb) [34
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [35
+ (./slides.vrb
+File: xls.png Graphic file (type QTm)
+ <use  "xls.png" >) [35
 
 ]
 \openout4 = `slides.vrb'.
@@ -1624,27 +1626,32 @@ File: xls.png Graphic file (type QTm)
 ]
 \openout4 = `slides.vrb'.
 
+ (./slides.vrb) [37
+
+]
+\openout4 = `slides.vrb'.
+
  (./slides.vrb
 File: csv.png Graphic file (type QTm)
  <use  "csv.png" >)
-Overfull \vbox (6.84766pt too high) detected at line 518
+Overfull \vbox (6.84766pt too high) detected at line 524
  []
 
-[37
+[38
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [38
-
-] [39
+ (./slides.vrb) [39
 
 ] [40
 
+] [41
+
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [41
+ (./slides.vrb) [42
 
 ]
 \openout4 = `slides.vrb'.
@@ -1652,24 +1659,24 @@ Overfull \vbox (6.84766pt too high) detected at line 518
  (./slides.vrb
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/0ABC5DB2FE6ACC6D37DC5AD4633E26DE8D627730F5AB356F16ABBF417A933F35.pygtex)) [42
+ (./_minted-slides/0ABC5DB2FE6ACC6D37DC5AD4633E26DE8D627730F5AB356F16ABBF417A933F35.pygtex)) [43
 
 ]
 \openout4 = `slides.vrb'.
 
  (./slides.vrb
 File: browse.png Graphic file (type QTm)
- <use  "browse.png" >) [43
-
-]
-\openout4 = `slides.vrb'.
-
- (./slides.vrb) [44
+ <use  "browse.png" >) [44
 
 ]
 \openout4 = `slides.vrb'.
 
  (./slides.vrb) [45
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [46
 
 ]
 \openout4 = `slides.vrb'.
@@ -1686,7 +1693,7 @@ File: browse.png Graphic file (type QTm)
  (./_minted-slides/08914B150CDD6888BF32D668C93361698D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/F1FC258E19D2E389B16985AA19A4F4A78D627730F5AB356F16ABBF417A933F35.pygtex)) [46
+ (./_minted-slides/F1FC258E19D2E389B16985AA19A4F4A78D627730F5AB356F16ABBF417A933F35.pygtex)) [47
 
 ]
 \openout4 = `slides.vrb'.
@@ -1703,7 +1710,7 @@ File: browse.png Graphic file (type QTm)
  (./_minted-slides/97039FAD08A4D2B77E03CF7A155E76F58D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/C2337169A54A5794C7549575BDFDE1178D627730F5AB356F16ABBF417A933F35.pygtex)) [47
+ (./_minted-slides/C2337169A54A5794C7549575BDFDE1178D627730F5AB356F16ABBF417A933F35.pygtex)) [48
 
 ]
 \openout4 = `slides.vrb'.
@@ -1720,12 +1727,12 @@ File: browse.png Graphic file (type QTm)
  (./_minted-slides/7C948FE88600921019FA3A43981700318D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/0A2C9E0AA56DDCB7BF1F2A24F2F4587B8D627730F5AB356F16ABBF417A933F35.pygtex)) [48
+ (./_minted-slides/0A2C9E0AA56DDCB7BF1F2A24F2F4587B8D627730F5AB356F16ABBF417A933F35.pygtex)) [49
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [49
+ (./slides.vrb) [50
 
 ]
 \openout4 = `slides.vrb'.
@@ -1761,25 +1768,107 @@ File: browse.png Graphic file (type QTm)
  (./_minted-slides/D0781A20299A0AC7F2473649CF514ABC8D627730F5AB356F16ABBF417A933F35.pygtex)
 \openout7 = `slides.pyg'.
 
- (./_minted-slides/8183AA57A23658EFE7BA7AEBE60816BC8D627730F5AB356F16ABBF417A933F35.pygtex)) [50
+ (./_minted-slides/8183AA57A23658EFE7BA7AEBE60816BC8D627730F5AB356F16ABBF417A933F35.pygtex)) [51
 
 ]
 \openout4 = `slides.vrb'.
 
- (./slides.vrb) [51
+ (./slides.vrb
+\openout7 = `slides.pyg'.
 
-] [52
+ (./_minted-slides/CBA234FBD0EF0EFA86F477D29700F8408D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
 
-]
-\openout4 = `slides.vrb'.
+ (./_minted-slides/D459FDBBFB6F110D499D1B1D7DDFDC0D8D627730F5AB356F16ABBF417A933F35.pygtex)) [52
 
- (./slides.vrb) [53
+] [53
 
 ] [54
 
-] [55
+]
+\openout4 = `slides.vrb'.
 
-] [56
+ (./slides.vrb) [55
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [56
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [57
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb) [58
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/018C568F532D5FB21980AB8A57776C088D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/D5B238DF9D63EC959C8730656FAF3F128D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/CEA099EFC5985524E529F98F4B99E5528D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/3C7F169F5C6D9996EF7BD84E6337C5EB8D627730F5AB356F16ABBF417A933F35.pygtex)) [59
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/DB149B082EC780D5A40C2E77FD0B5FD38D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/A39CCE46F68858D14998C58F03AABDCF8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/3F80C1ECAA9E8645448E737C86CDE3AC8D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/82898D20BF392419F9D86886464E0A098D627730F5AB356F16ABBF417A933F35.pygtex)
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/426F8401232BA50BC8537CC259E3C8EF8D627730F5AB356F16ABBF417A933F35.pygtex)) [60
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/C4769CABEB1B6E6590229978E3242D7D8D627730F5AB356F16ABBF417A933F35.pygtex)) [61
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/3F73342A8BA83C632C01537456D13A698D627730F5AB356F16ABBF417A933F35.pygtex)) [62
+
+]
+\openout4 = `slides.vrb'.
+
+ (./slides.vrb
+\openout7 = `slides.pyg'.
+
+ (./_minted-slides/0A3A0A83B48FDE4101AF481A826A8D5F8D627730F5AB356F16ABBF417A933F35.pygtex)) [63
+
+] [64
+
+] [65
 
 ]
 \tf@nav=\write9
@@ -1791,11 +1880,11 @@ File: browse.png Graphic file (type QTm)
 \tf@snm=\write11
 \openout11 = `slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 744.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 744.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 905.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 905.
  (./slides.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 744.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 744.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 905.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 905.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1804,12 +1893,12 @@ runsystem(rm slides.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37119 strings out of 493005
- 769008 string characters out of 6134596
- 880332 words of memory out of 5000000
- 40232 multiletter control sequences out of 15000+600000
+ 37216 strings out of 493005
+ 773935 string characters out of 6134596
+ 882089 words of memory out of 5000000
+ 40268 multiletter control sequences out of 15000+600000
  10008 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,12n,91p,10380b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on slides.pdf (56 pages).
+Output written on slides.pdf (65 pages).

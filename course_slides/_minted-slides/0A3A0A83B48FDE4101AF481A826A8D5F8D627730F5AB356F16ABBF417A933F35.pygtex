@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{correlate} [varlist]\PYG{k}{ if} [condition], [options] 
+\end{Verbatim}

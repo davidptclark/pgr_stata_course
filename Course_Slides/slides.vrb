@@ -1,13 +1,13 @@
-\frametitle{Stata Workflow: Descriptive Statistics}
+\frametitle{Descriptive Statistics: Correlate}
+
 \begin{center}
-\usetikzlibrary{shapes.geometric} % required in the preamble
-\smartdiagramset{module shape=rectangle,
-font=\tiny,
-module minimum width=2cm,
-module minimum height=1cm,
-text width=1.7cm,
-circular distance=2cm,
-circular final arrow disabled=true,
-}
-\smartdiagram[circular diagram:clockwise]{File management, Data management, \textbf{Descriptive statistics}, Visualisation, Statistical analysis}
+\mint[fontfamily=tt]{stata}|correlate [varlist] if [condition], [options] |
 \end{center}
+
+The \alert{correlate} command displays the correlation matrix or covariance matrix for a group of
+variables. If \alert{varlist is not specified}, the matrix is displayed for \alert{all variables} in the dataset.
+
+Again, there is the option to \textbf{look at correlations between variables on a condition} that you specify about the data
+
+Moreover, like tabulate, there are options here but they are \alert{used infrequently}, so the standard syntax is \alert{usually} enough
+

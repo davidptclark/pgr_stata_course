@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{keep} [varlist]\PYG{k}{ if} [condition] 
+\end{Verbatim}

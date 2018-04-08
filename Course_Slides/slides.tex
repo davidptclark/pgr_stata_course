@@ -129,6 +129,12 @@ There are alternative statistical software packages you can use (to name a few):
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Crippling Self-Doubt}
+\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{curve.png}
+
+\end{frame}
+
+\begin{frame}[fragile]
   \frametitle{Stata 14 Front End Graphic User Interface (GUI)}
   \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{stata.png}
 \end{frame}
@@ -703,8 +709,23 @@ When it comes to \textbf{manipulating/changing the data}, for whatever reason, t
 
 \begin{frame}[fragile]
 \frametitle{Manipulating Data: Using Conditionals}
+It may seem like it's starting to get complicated now but this is a really small addition
+
+For example, the \alert{general syntax} for \alert{keep} is as follows:
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|keep [varlist] if [condition] |
+\end{center}
+
+This addition at the end of the \alert{required} syntax is applicable to \textbf{most} Stata commands
+
+A good way to check is to type \mint[fontfamily=tt]{stata}|help [command]|
+
+This will bring up a help file for a given command (\alert{and is very useful!})
 
 \end{frame}
+
+\section{Demo: Using Conditionals}
 
 \section{Descriptive Statistics}
 
@@ -724,12 +745,152 @@ circular final arrow disabled=true,
 \end{center}	
 \end{frame}
 
-\section{Conclusion}
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics}
+	It may seem like we've go though a lot to get to this point but again, 
+	\alert{thorough procedure pays off}
+	
+	Up to this point, we should be able to:
+	
+	\begin{itemize}
+		\item Set working directories for new projects
+		\item Import various datafiles
+		\item Manipulate data and generate new variables
+	\end{itemize}
+	
+	\textbf{Only now} should we proceed with looking at and analysing the data, \textbf{not before!}
+\end{frame}
 
-\begin{frame}{Summary}
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics}
+So, what do we mean by \textbf{descriptive statistics}? 
 
+These include but \alert{are not limited to}:
+
+\begin{itemize}
+\item Sample size
+	\begin{itemize}
+		\item Overall
+		\item Sub-group
+	\end{itemize}
+\item Outcome frequencies
+\item Measures of central tendency
+	 \begin{itemize}
+		\item Mean
+		\item Median
+		\item Mode
+	\end{itemize}
+\item Measures of variability
+	 \begin{itemize}
+		\item Standard deviation
+		\item Variance
+	\end{itemize}
+\item Variable relation
+	 \begin{itemize}
+		\item Correlation
+	\end{itemize}
+\end{itemize}
 
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics}
+Some of you (hypothetically) may ask, \alert{"What's the point in these descriptive statistics?"}
+
+Short answer: \textbf{A LOT!}
+
+It can tell us:
+
+\begin{itemize}
+\item The dimensions of the dataset
+\item What the distribution is of each variable
+\item How variables are related with one another and to what degree
+\end{itemize}
+
+The reason that these are important before modelling is because a lot about what we want to know about the data between groups or within groups are expressed here!
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics}
+
+These properties of the data are attained using a few key commands in Stata:
+
+\begin{itemize}
+ \item \mint[fontfamily=tt]{stata}|describe|  \alert{"describes" the data}
+ \item 	\mint[fontfamily=tt]{stata}|summarize|  \alert{summarises the data}
+ \item  \mint[fontfamily=tt]{stata}|tabulate|  \alert{tabulates a/the variable(s)}
+ \item \mint[fontfamily=tt]{stata}|correlate| \alert{creates a correlation matrix of specified variables}  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics: Describe}
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|describe [varlist], [options] |
+\end{center}
+
+This reports some basic information about the dataset and its variables (size, number of variables and observations, storage types of variables etc.
+
+Notice, there is the ability to add an option to the end of the command - \alert{These are option but may be useful}
+\begin{itemize}
+\item \mint[fontfamily=tt]{stata}|simple| display only variable names
+\item \mint[fontfamily=tt]{stata}|short| display only general information
+\item \mint[fontfamily=tt]{stata}|fullnames| do not abbreviate variable names
+\item \mint[fontfamily=tt]{stata}|numbers| display variable number along with name
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics: Summarize}
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|summarize [varlist] if [condition], [options] |
+\end{center}
+
+\alert{summarize} calculates and displays a variety of univariate summary statistics. If no \alert{varlist} is specified, summary statistics are calculated for all the variables in the dataset
+
+The main option that can be used here is \alert{detail}, which will produce additional summary statistics, such as \alert{third and fourth-order moments - skewness and kurtosis} 
+
+Notice, the \textbf{conditional option} is available here, which \textbf{allows for summary statistics for a sub-sample of the data}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics: Tabulate}
+
+The \alert{general syntax} for \alert{tabulate} is as follows:
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|tabulate [varlist] if [condition], [options] |
+\end{center}
+
+\alert{tabulate} produces a one(two)-way table of frequency counts
+
+Again, there is the option to \textbf{tabulate the data on a condition} that you specify about the data
+
+There are options here but they are \alert{used infrequently}, so the standard syntax is \alert{usually} enough
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Descriptive Statistics: Correlate}
+
+\begin{center}
+\mint[fontfamily=tt]{stata}|correlate [varlist] if [condition], [options] |
+\end{center}
+
+The \alert{correlate} command displays the correlation matrix or covariance matrix for a group of
+variables. If \alert{varlist is not specified}, the matrix is displayed for \alert{all variables} in the dataset.
+
+Again, there is the option to \textbf{look at correlations between variables on a condition} that you specify about the data
+
+Moreover, like tabulate, there are options here but they are \alert{used infrequently}, so the standard syntax is \alert{usually} enough
+
+\end{frame}
+
+\section{Demo: Descriptive Statistics}
 
 \plain{}{Questions?}
 
