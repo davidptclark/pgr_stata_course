@@ -1,6 +1,6 @@
 # PGR Stata Course
 
-The structure of the directories and folders is as follows:
+The directory structure is as follows:
 
 * Course_Slides: Contains the slides for both part of the course:
   * part_1: Morning session
